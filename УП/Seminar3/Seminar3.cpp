@@ -72,6 +72,7 @@ int main()
 
 	cout << result;*/
 
+
 	//4
 	/*int n = 0;
 	cin >> n;
@@ -84,6 +85,7 @@ int main()
 	}
 
 	cout << result;*/
+
 
 	//5
 	/*int m = 0;
@@ -100,6 +102,7 @@ int main()
 			cout << endl;
 		}
 	}*/
+
 
 	//6
 	/*int num = 0;
@@ -134,6 +137,7 @@ int main()
 		}
 	}*/
 
+
 	//7
 	/*int n = 0;
 	cin >> n;
@@ -153,6 +157,7 @@ int main()
 
 	cout << result;*/
 
+
 	//8
 	/*int n = 0;
 	cin >> n;
@@ -170,7 +175,63 @@ int main()
 			}
 		}
 	}*/
-	
+
+
 	//9
+	/*int n = 0;
+	cin >> n;
+
+	char symbol;
+	cin >> symbol;
+
+	if (n < 2 || n > 9)
+	{
+		cout << "Please enter a number between 2 and 9!";
+	}
+	else
+	{
+		int indentation = n;
+		int printCount = 1;
+
+		for (size_t i = 0; i < n; i++)
+		{
+			for (size_t i = 0; i < indentation; i++)
+			{
+				cout << " ";
+			}
+
+			for (size_t i = 0; i < printCount; i++)
+			{
+				cout << symbol;
+			}
+
+			cout << endl;
+			printCount += 2;
+			indentation -= 1;
+		}
+		
+		indentation+=2;
+		printCount -= 4;
+
+		for (size_t i = 0; i < n - 1; i++)
+		{
+			for (size_t i = 0; i < indentation; i++)
+			{
+				cout << " ";
+			}
+
+			for (size_t i = 0; i < printCount; i++)
+			{
+				cout << symbol;
+			}
+
+			cout << endl;
+			printCount -= 2;
+			indentation += 1;
+		}
+	}*/
+
+	
+	//10
 	
 }
