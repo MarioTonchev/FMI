@@ -1,0 +1,8 @@
+# Ignore Visual Studio temporary files
+.vs/
+
+# Ignore other system files
+*.vsidx
+*.vscode/
+*.DS_Store
+*.log
