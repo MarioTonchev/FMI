@@ -209,7 +209,7 @@ int main()
 			printCount += 2;
 			indentation -= 1;
 		}
-		
+
 		indentation+=2;
 		printCount -= 4;
 
@@ -231,7 +231,160 @@ int main()
 		}
 	}*/
 
-	
+
 	//10
+	/*int m = 0;
+	int n = 0;
+	cin >> m >> n;
+
+	int sumOfDelimeters = 0;
+
+	for (size_t i = m; i <= n; i++)
+	{
+		for (size_t j = 1; j < i; j++)
+		{
+			if (i % j == 0)
+			{
+				sumOfDelimeters += j;
+			}
+		}
+
+		if (sumOfDelimeters == i)
+		{
+			cout << i << endl;
+		}
+		sumOfDelimeters = 0;
+	}*/
+
+
+	//11
+	/*int n = 0;
+	cin >> n;
+
+	if (n < 3)
+	{
+		cout << "Please enter a number bigger than 3!";
+		return 0;
+	}
+
+	int firstNum = 1;
+	int secondNum = 1;
+
+	cout << firstNum << " " << secondNum << " ";
+
+	while (true)
+	{
+		if (firstNum + secondNum > n)
+		{
+			break;
+		}
+
+		secondNum = firstNum + secondNum;
+		firstNum = secondNum - firstNum;
+
+		cout << secondNum << " ";
+	}*/
+
+
+	//12
+	/*int n = 0;
+	cin >> n;
+	
+	int digitCount = 0;
+
+	int temp = n;
+
+	while (temp > 0)
+	{
+		digitCount++;
+
+		temp /= 10;
+	}
+
+	int result = 0;
+	int multiplier = 1;
+
+	if (digitCount % 2 == 0)
+	{
+		for (size_t i = 1; i <= digitCount; i++)
+		{
+			if (i == digitCount / 2 || i == digitCount / 2 + 1)
+			{
+				n /= 10;
+				continue;
+			}
+
+			int digit = n % 10;
+			n /= 10;
+
+			result += multiplier * digit;
+
+			multiplier *= 10;
+		}
+	}
+	else
+	{
+		for (size_t i = 1; i <= digitCount; i++)
+		{
+			if (i == digitCount / 2 + 1)
+			{
+				n /= 10;
+				continue;
+			}
+
+			int digit = n % 10;
+			n /= 10;
+
+			result += multiplier * digit;
+
+			multiplier *= 10;
+		}
+	}
+
+	cout << result << " " << result + 1;*/
+
+
+	//13
+	/*int a = 0;
+	int b = 0;
+	cin >> a >> b;
+
+	int biggerNum = 0;
+	int smallerNum = 0;
+
+	if (a > b)
+	{
+		biggerNum = a;
+		smallerNum = b;
+	}
+	else
+	{
+		biggerNum = b;
+		smallerNum = a;
+	}
+
+	for (size_t i = smallerNum; i <= biggerNum; i++)
+	{
+		bool isPrime = true;
+
+		for (size_t j = 2; j < i; j++)
+		{
+			if (i % j == 0)
+			{
+				isPrime = false;
+				break;
+			}
+		}
+
+		if (isPrime)
+		{
+			cout << i << " ";
+		}
+	}*/
+
+	
+	//14
+	
+	
 	
 }
