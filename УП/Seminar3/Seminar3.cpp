@@ -289,7 +289,7 @@ int main()
 	//12
 	/*int n = 0;
 	cin >> n;
-	
+
 	int digitCount = 0;
 
 	int temp = n;
@@ -382,9 +382,80 @@ int main()
 		}
 	}*/
 
-	
+
 	//14
-	
-	
+	/*int n = 0;
+	cin >> n;
+
+	if (n == 1)
+	{
+		cout << "True";
+		return 0;
+	}
+
+	int powersOfTwo = 2;
+
+	while (true)
+	{
+		if (powersOfTwo == n)
+		{
+			cout << "True";
+			return 0;
+		}
+		else if (powersOfTwo > n)
+		{
+			cout << "False";
+			return 0;
+		}
+
+		powersOfTwo *= 2;
+	}*/
+
+
+	//15
+	/*int n = 0;
+	cin >> n;
+
+	while (n > 0)
+	{
+		int power = 0;
+		int currentPowerOfTwo = 1;
+
+		while (currentPowerOfTwo * 2 <= n)
+		{
+			currentPowerOfTwo *= 2;
+			power += 1;
+		}
+
+		n -= currentPowerOfTwo;
+
+		if (n > 0)
+		{
+
+			cout << 2 << '^' << power << ' ' << '+' << ' ';
+		}
+		else
+		{
+			cout << 2 << '^' << power;
+		}
+	}*/
+
+
+	//16
+	/*int a, b, c, d, e = 0;
+	cin >> a >> b >> c >> d >> e;
+
+	for (int x = -100; x <= 100; x++)
+	{
+		int result = a * pow(x, 4) + b * pow(x, 3) + c * pow(x, 2) + d * x + e;
+
+		if (result >= 0)
+		{
+			cout << x << " ";
+		}
+	}*/
+
+
+	//17
 	
 }
