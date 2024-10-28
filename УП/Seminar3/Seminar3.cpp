@@ -457,5 +457,159 @@ int main()
 
 
 	//17
-	
+	/*int n = 0;
+	cin >> n;
+
+	int counter = 0;
+
+	for (size_t i = 1; i <= n; i++)
+	{
+		for (size_t j = 1; j <= i; j++)
+		{
+			cout << j << ' ';
+		}
+
+		if (i == n)
+		{
+			for (size_t i = 0; i < n; i++)
+			{
+				cout << '-';
+			}
+			cout << ' ';
+		}
+		else
+		{
+			for (size_t i = 0; i <= n * 5 - 4 - counter; i++)
+			{
+				cout << " ";
+			}
+
+			counter += 4;
+		}
+
+		for (size_t j = i; j >= 1; j--)
+		{
+			cout << j << ' ';
+		}
+
+		cout << endl;
+	}
+
+	for (size_t i = n - 1; i >= 1; i--)
+	{
+		for (size_t j = 1; j <= i; j++)
+		{
+			cout << j << ' ';
+		}
+
+		for (size_t i = 0; i <= n * 5 - counter; i++)
+		{
+			cout << " ";
+		}
+
+		for (size_t j = i; j >= 1; j--)
+		{
+			cout << j << ' ';
+		}
+
+		counter -= 4;
+		cout << endl;
+	}*/
+
+
+	//18
+	/*int n = 0;
+	cin >> n;
+
+	int number = 0;
+	int numberCopy = 0;
+	int multiplier = pow(10, n - 1);
+
+	for (size_t i = 1; i <= n; i++)
+	{
+		number += i * multiplier;
+
+		multiplier /= 10;
+	}
+
+	for (size_t i = 1; i <= n + 2; i++)
+	{
+		cout << '#';
+	}
+	cout << endl;
+
+	multiplier = pow(10, n - 1);
+
+	for (size_t i = 1; i <= n; i++)
+	{
+		cout << '#';
+
+		cout << number;
+		numberCopy = number;
+
+		int temp = number;
+
+		while (temp >= 10)
+		{
+			temp /= 10;
+		}
+
+		number -= temp * multiplier;
+		number = number * 10 + temp;
+
+		cout << '#';
+		cout << endl;
+	}
+
+	cout << '#';
+	int xCounter = 0;
+
+	if (n % 2 == 0)
+	{
+		xCounter = 2;
+	}
+	else
+	{
+		xCounter = 1;
+	}
+
+	for (size_t i = 0; i <= n / 2 - xCounter; i++)
+	{
+		cout << ' ';
+	}
+
+	for (size_t i = 0; i < xCounter; i++)
+	{
+		cout << 'X';
+	}
+
+	for (size_t i = 0; i <= n / 2 - xCounter; i++)
+	{
+		cout << ' ';
+	}
+
+	cout << '#';
+	cout << endl;
+
+	for (size_t i = 1; i <= n; i++)
+	{
+		cout << '#';
+
+		cout << numberCopy;
+
+		int temp = numberCopy % 10;
+		numberCopy /= 10;
+
+		numberCopy += temp * multiplier;
+
+		cout << '#';
+		cout << endl;
+	}
+
+	for (size_t i = 1; i <= n + 2; i++)
+	{
+		cout << '#';
+	}*/
+
+	//19	
 }
